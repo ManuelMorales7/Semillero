@@ -7,4 +7,4 @@
 
     La aplicación que yo elejir recrear fue https://music.youtube.com/. Ya que para cada uno la pantalla principal es distinta (debido a que no todos escuchan la misma música), se anexa foto de la pantalla a recrear.
 
-![image](https://user-images.githubusercontent.com/43793760/125354538-8afe0680-e329-11eb-8610-510f972a3d44.png)
+    ![image](https://user-images.githubusercontent.com/43793760/125354538-8afe0680-e329-11eb-8610-510f972a3d44.png)
