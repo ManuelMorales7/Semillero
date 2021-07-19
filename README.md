@@ -11,4 +11,4 @@
 
 
     - ### Segunda Semana
-    Primer Workout : - ### Primera Semana
+    Primer Workout : https://www.figma.com/file/xgMkHCDjbLnvZgP1MgaxqR/Untitled?node-id=0%3A1
