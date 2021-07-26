@@ -10,5 +10,7 @@
     ![image](https://user-images.githubusercontent.com/43793760/125354538-8afe0680-e329-11eb-8610-510f972a3d44.png)
 
 
-    - ### Segunda Semana
-    Primer Workout : https://www.figma.com/file/xgMkHCDjbLnvZgP1MgaxqR/Untitled?node-id=0%3A1
+    - ### Segunda y tercera Semana
+    Primer Workout : https://www.figma.com/file/xgMkHCDjbLnvZgP1MgaxqR/Figma-s-Workouts?node-id=0%3A1
+    Segundo  Workout : https://www.figma.com/file/xgMkHCDjbLnvZgP1MgaxqR/Figma-s-Workouts?node-id=33%3A2
+    Tercer Workout : https://www.figma.com/file/xgMkHCDjbLnvZgP1MgaxqR/Figma-s-Workouts?node-id=33%3A3
