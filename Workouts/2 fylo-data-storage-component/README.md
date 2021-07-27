@@ -1,4 +1,4 @@
-# Figma #1
+# Figma #2
 - ## Número de pantallas
     - ### 3
 - ## Features
