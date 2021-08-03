@@ -1,54 +1,215 @@
-<html>
-<head>
-    <link rel="stylesheet" href="style.css">
-<title>Workout 1</title>
-</head>
+
+    justify-content: center ;
+    align-items: center;
+    background-color: #edf2f8;
+    
+}
+
+main{
+
+    width: 800px;
+    height: 280px;
+    display:flex;
+    flex-direction:row-reverse;
+    background-color: #fff;    
+    border-radius: 15px;
+    
+    
+    
+}
+
+aside{
+    
+    float: left;    
+    width: 445px;
+    height:  295x;
+    border-radius: 15px 0px 0px 15px; 
+    
+   
+}
+
+h1{
+
+    font-weight: bold;
+    font-size: 20px;
+}
+h2{
+    font-weight: lighter;
+    font-size: 15px;
+
+}
+
+
+img{
+    width: 275px;
+    height: 279;
+    
+    
+    
+}
+
+.photo{
+
+    display: flex;
+    border-radius: 50%;      
+    width: 40px;
+    height: 41px;
+    margin: 15 0 0 0;     
+
+}
+
+.name{
+    margin: 20;
+    font-weight: bold;
+    font-size: 13px;
+    
+}
+
+.avatar{
+    display: flex;
+    
+}
+
+.date h3{
+    font-family: "manropre", sans-serif;
+    margin: -20 62 60;
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+
+
+.button{
+    width: 29px; height: 29px;
+    margin: -90 -500 -1180 400; 
+}   
+
+section{
+    font-family: "manrope", sans-serif;
+    color: #565d56;
+    width: 731px;
+    height: 280px;
+    margin: 20 50 50 50;
+    
+}
+
+
+.main-photo{
+    border-radius: 15px 0px 0px 15px;
+}
+
+
+
+
+.popup{
+    width: 248px;
+    height: 55px;
+    border-radius: 9px;
+    background-color: #445164;
+}
+
+.popup h3{
+    display: flex;
+    color: #fff;
+    font-size: 16px;
+    font-family: "manropre", sans-serif;
+    font-weight: 100;
+    margin: 20 10 0 30    
+}
+
+.fa-twitter{
+    color: #fff;
+    margin-right: 5px;
+}
+
+.fa-facebook-square{
+    color: #fff;
+    margin-right: 5px;
+}
+
+.fa-pinterest-square{
+    color: #fff;
+    margin-left: 5px;
+}
+
+.button-selected{
+    width: 29px; height: 29px;
+    margin: 56 100 0 -190; 
+}   
+
+.buttons-media{
+    margin: -17 -80 0 116;
+}
+
+
+.fa-times{
+    
+    margin: -102 100 0 265;
+    color: #000;
+    
+   
+}
+
+.popup{
+
+    visibility: hidden;
+    margin: 50 0 0 -170;
+}
+
+
+.popup.active{
+    visibility: visible;
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+    main{
+        flex-direction: column-reverse;
+        Width:  329px;
+        Height: 312px;
+        margin: 50px;
         
-<body>
-
-    <main>
-        <div>
-
-            <section>
-                
-                <header>
-                    Shift the overall look and feel by adding these wonderful touches to furniture in your home
-                </header>
-
-                <article> 
-                    Ever been in a room and felt like somethigg was missing? Perhaps it felt slightly bare and uninviting. 
-                    I’ve got some simple tips to help you make any room feel complete
-                </article>
-
-                <footer>
-                    <div>
-                        <img src="images/avatar-michelle.jpg">
-                    </div>
-                    <div>
-                        <h3>
-                            Michelle Appleton
-                        </h3>
-
-                        <p>28 Jun 2020</p>
-                    </div>
-
-                    <div>
-                        <img src="images/icon-share.svg">
-                    </div>
-
-                </footer>
-
-            
-            </section>
+    }
 
 
-            <aside>
-                <img src="images/drawers.jpg"> 
-            </aside>
-        </div>
-    </main>
+    body{
+ 
+        Width:  365px;
+        Height: 667px;
+        margin: 50px;
+        
+    }
 
-</body>
-</html>
+    section{
+        width: 300px;
+        height: 100%;
+    }
+
+    .container{
+        width: 272px;
+        height: 84px;
+        margin: 0 0 140 -25;
+    }
+    
+    .main-photo{
+        width: 329px;
+        height: 200px;
+        margin: 0 0 -30 0;
+    }
+
+    .button{
+        
+        margin: -90 0 60 230;
+        
+
+    }
+ 
+}
+
+
+
+
 
 
