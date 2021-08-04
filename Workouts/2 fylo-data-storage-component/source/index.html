@@ -2,7 +2,10 @@
 <head>
 
 </head>
+    <link rel="stylesheet" href="style.css">
 <body>
+
+    <div class="background" style="background-image: deskturl('images/bg-op.png') ;"></div>
 
     <main>
 
@@ -11,20 +14,31 @@
             <div class="main-container">
 
                 <div class="logo-icon">
-                    <img src="images/logo.svg">                    
+                    <img class="logo" src="images/logo.svg">                    
                 </div>
 
-                <div class="document-icon">
-                    <img src="images/icon-document.svg">                                        
-                </div>
+                <div class="icons">
 
-                <div class="folder-icon">
-                    <img src="images/icon-folder.svg">   
-                </div>
+                    <div class="document-icon">
+                        <img class="docSelected" src="images/icon-document.svg">     
+                        <img class="docHover" src="images/hoverDoc.svg"> 
+                        <img class="docBtn" src="images/docBtn.svg">                                  
+                    </div>
+    
+                    <div class="folder-icon">
+                        <img class="folderSelected" src="images/icon-folder.svg"> 
+                        <img class="folderHover" src="images/hoverFolder.svg">
+                        <img class="folderBtn" src="images/folderBtn.svg">                                    
 
-                <div class="upload-icon">
-                    <img src="images/icon-upload.svg">
-                </div>
+                    </div>
+    
+                    <div class="upload-icon">
+                        <img class="uploadSelected" src="images/icon-upload.svg">
+                        <img class="uploadHover" src="images/hoverUpload.svg">
+                        <img class="uploadBtn" src="images/uploadBtn.svg">   
+                    </div>
+
+                </div>                
 
             </div>
 
@@ -32,17 +46,26 @@
 
         <aside>
             <div class="slider-container">
-                <p>You've used 815 GB of your storage</p>
-                <label for="slider"></label>
+                <p class="info">You've used <strong>815 GB</strong> of your storage</p>
+                <br>
                 <input id="slider" type="range">
             </div>
 
             <div class="storage">
                 <p>1000 GB LEFT</p>
             </div>
+
+            <div class="storage-left">
+                <p>0 GB</p>
+            </div>
+
+            <div class="storage-full">
+                <p>1000 GB</p>
+            </div>
+
         </aside>
 
-
+       
 
     </main>
 
