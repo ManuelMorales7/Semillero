@@ -16,7 +16,8 @@ main{
     flex-direction:row-reverse;
     background-color: #fff;    
     border-radius: 15px;    
-    box-shadow: 2px 2px gray;   
+    box-shadow: 2px 2px gray;
+    
     
     
     
@@ -37,11 +38,16 @@ h1{
 
     font-weight: bold;
     font-size: 20px;
+    line-height: 130%;
+    color: #505767;
 }
 
 h2{
     font-weight: lighter;
     font-size: 15px;
+    color: #9198A0;
+    line-height: 130%;
+    
 }
 
 
@@ -77,7 +83,7 @@ img{
     margin: -20 62 60;
     font-size: 13px;
     font-weight: lighter;
-}
+    }
 
 
 
@@ -89,8 +95,7 @@ img{
 }   
 
 section{
-    font-family: "manrope", sans-serif;
-    color: #565d56;
+    font-family: "manrope", sans-serif;    
     width: 731px;
     height: 280px;
     margin: 20 50 50 50;
@@ -160,7 +165,7 @@ section{
 .popup{
     display: none;
     position: absolute;
-    bottom: 210px;
+    bottom: 196px;
     right: 100px;
 
 }
@@ -173,41 +178,56 @@ section{
 @media screen and (max-width: 800px) {
     main{
         flex-direction: column-reverse;
-        Width:  329px;
-        Height: 312px;
-        margin: 50px;
+        Width:  270px;
+        Height: 410px;        
         
+        
+    }
+
+    .espaciado{
+        Width:  240px;
+        Height: 80px;        
+        margin-top: 30px;
+        margin-left: -10px;
+    }
+
+    .espaciado-h2{
+        Width:  240px;
+        Height: 80px;
+        
+        margin-top: -20px;
+        margin-left: -10px;
     }
 
 
     body{
  
-        Width:  365px;
+        Width:  270px;
         Height: 667px;
-        margin: 50px;
+        
         
     }
 
     section{
-        width: 300px;
-        height: 60%;
+        width: 270px;
+        height: 170px;
     }
 
     .container{
-        width: 272px;
+        width: 270px;
         height: 84px;
         margin: 0 0 140 -25;
     }
     
     .main-photo{
-        width: 329px;
+        width: 270px;
         height: 200px;
         margin: 0 0 -30 0;
     }
 
     .button-default{
         
-        margin: -90 0 60 230;
+        margin: -61 0 60 200;
         
     }
  
@@ -217,23 +237,48 @@ section{
     }
 
     .container h2{
-        font-size: 13px;
+        font-size: 10px;         
+        
     }
 
     .container h1{
-        font-size: 16px;
+        font-size: 13px;     
+        hyphens: auto;
+        word-wrap: break-word;
+        word-break: break-word;
+        line-height: 130%;
+        color: #505767;
+
     }
 
     .button-selected{
-        margin: -90 0 60 230;
+        margin: -90 0 60 20;
     }
 
     .popup{
-        Width:  329px;
-        Height: 70%;
+        width: 269px;
+        Height: 11%;
+        position: absolute;
+        bottom: -21px;
+        left: 10px;
     }
-}
 
+    .button-selected{
+        position: absolute;
+        right: 86px;
+        bottom: -60px;
+    }
+
+    .photo{
+        display: none;
+    }
+
+    h3{
+        display: none;
+    }
+    
+   
+}
 
 
 
