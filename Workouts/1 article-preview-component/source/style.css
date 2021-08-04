@@ -5,16 +5,18 @@ body{
     align-items: center;
     background-color: #edf2f8;
     
+    
 }
 
 main{
 
-    width: 800px;
-    height: 280px;
+    width: 813px;
+    height: 279px;
     display:flex;
     flex-direction:row-reverse;
     background-color: #fff;    
-    border-radius: 15px;
+    border-radius: 15px;    
+    box-shadow: 2px 2px gray;   
     
     
     
@@ -26,6 +28,7 @@ aside{
     width: 445px;
     height:  295x;
     border-radius: 15px 0px 0px 15px; 
+    
     
    
 }
@@ -103,11 +106,11 @@ section{
 
 
 .popup{
-    width: 248px;
+    width: 220px;
     height: 55px;
     border-radius: 9px;
     background-color: #445164;
-    
+        
 }
 
 .popup h3{
@@ -139,7 +142,7 @@ section{
 }   
 
 .buttons-media{
-    margin: -17 -80 0 116;
+    margin: -19 -80 0 116;
 }
 
 
@@ -156,6 +159,10 @@ section{
 
 .popup{
     display: none;
+    position: absolute;
+    bottom: 210px;
+    right: 100px;
+
 }
 
 .overlay:hover .popup{
@@ -226,11 +233,6 @@ section{
         Height: 70%;
     }
 }
-
-
-
-
-
 
 
 
