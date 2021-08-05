@@ -2,12 +2,11 @@
 
 
 body{
-    width: 1624px;
-    height: 926px;
+    background-size: 1920px 500px;
     background-color: #0C122C;
-    background-image: url('/source/images/bg-desktop.png');
+    background-image: url('/images/bg-desktop.png');
     color: white;
-    background-repeat: repeat-x;    
+    background-repeat: no-repeat;    
     background-position: bottom left;
     font-family: "Raleway";
     
@@ -20,8 +19,8 @@ section{
     background: #1e2c69;
     border-radius: 8px 100px 8px 8px;
     position: absolute;
-    top: 400px;
-    left: 200px;
+    top: 310px;
+    left: 350px;
 
 }
 
@@ -163,8 +162,8 @@ aside{
     height: 150px;
     background: #1e2c69;
     position: absolute;
-    top: 450px;
-    left: 600px;
+    top: 360px;
+    left: 750px;
     border-radius: 8px;
 
 }
@@ -196,6 +195,8 @@ aside{
     left: 414px;
 }
 
+
+/*
 input[type=range]{
     width: 430px;    
     background-color: black;
@@ -204,10 +205,11 @@ input[type=range]{
     background: #FF6F95;  
     position: absolute;
     top: 100px;   
-    right: -21px; 
-      
+    right: -21px;      
 
 }
+
+*/
 
 
 .slider-container{
@@ -221,14 +223,169 @@ input[type=range]{
 
 }
 
-.storage{
+.storage .number{
     position: absolute;
-    left: 315px;
-    top: -35px;
+    left: 15px;
+    top: -37px;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 40px;
     color: 000;
 }
+
+.storage .words{
+    position: absolute;
+    left: 90px;
+    top: 15px;
+    font-weight: bold;
+    font-size: 10px;
+    color: gray;
+}
+
+.storage{
+    position: absolute;
+    top: -39px;    
+    left: 300px;
+    width: 145px;
+    height: 50px;
+}
+
+.dot{
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    right:1px;
+}
+
+.bar{
+    width: 430px;    
+    background-color: #0c122c;
+    border-radius: 8px;
+    position: relative;
+    top: 65px;
+    right: -35px;
+    height: 16px;
+
+
+}
+
+
+.bar-progress{
+    width: 95%;
+    height: 15px;
+    background-image: linear-gradient(45deg, #f2a49e, #fb4d92);
+    border-radius: 8px;
+    position: relative;
+    animation: progress 20s;
+}
+
+@keyframes progress{
+    from{
+        width: 2%;
+        
+    }
+
+    to{
+         width: 95%;
+    }
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+    aside{
+        position: absolute;
+        top: 530px;
+        left: 350px;
+        width: 280px;
+        height: 180px;
+        
+    }
+
+    section{
+        width: 280px;
+    }
+
+
+    input[type=range]{
+        position: absolute;
+        top: -80px;
+        left: -50px;
+        width: 225px;   
+        right: 185px;           
+    
+    }
+
+    .storage{
+        position: absolute;
+        top: 146px;
+        left: 74px;
+
+    }
+    
+    .slider-container{
+        position: abosolute;
+        top: 150px;
+        left: 70px;
+    }
+
+    .storage-info{
+        position: absolute;
+        height: 40px;
+        top: 80px;
+        left: -1px;
+    }
+
+    .storage-full{
+        position: absolute;
+        top: 1px;
+        left: 200px;
+    }
+
+    .storage-left{
+        position: absolute;
+        top: 1px;
+        left: 30px;
+
+    }
+
+    .info{
+        position: absolute;
+        top: -140px;
+        left: -70px;
+
+    }
+
+    
+    .bar{
+        width: 215px;
+           
+    }
+
+    body{
+        background-size: cover;
+        background-image: url('/images/bg-mobile.png');
+        transition: 1s;
+        position: relative;
+        
+    }
+
+   
+    
+
+
+    
+    }
+
+    
+
+
+    
+
+
+
 
 
 
