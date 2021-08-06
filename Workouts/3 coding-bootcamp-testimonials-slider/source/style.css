@@ -1,0 +1,9 @@
+body{
+    background-size: 1920px;
+    
+}
+
+.patternCurve{
+    background-image: url('/images/pattern-curve.svg');
+    background-position: bottom left;
+}
