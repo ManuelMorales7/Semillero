@@ -1,0 +1,87 @@
+@import url('https://rsms.me/inter/inter.css');
+
+body{
+    background-image: url('/source/images/pattern-curve.svg');    
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: bottom;    
+    background-position-x: 0%;    
+    padding: 68px 75px 126px 227px;
+}
+
+main{
+    height: 100%;
+    padding: 1px;
+    
+}
+
+.right{
+    float: right;
+    width: 49%;
+    height: 99%;
+    /* border: solid green; */
+}
+
+.left{
+    float: left;
+    width: 49%;
+    height: 99%;
+    background-image: url('/source/images/pattern-quotes.svg');
+    background-repeat: no-repeat;
+    background-position-x: 35%; 
+    background-size: 20%; 
+    background-position-y: 10vh;   
+    /* border: solid orange;   */
+    
+}
+
+.text{
+    height: 9em;
+    width: 90%;    
+    font-size: 2.2vw;
+    margin-top: 20%;
+    margin-left: 17%;  
+    margin-bottom: 1%; 
+    
+
+    
+}
+
+.by{
+    width: 61%; 
+    height: 10%;   
+    font-size: 1vw;
+    margin-left: 17%;
+}
+
+.person{
+    width: 39%;
+    float: left;
+    font-family: inter;
+    color: #1C1A3F;
+}
+
+.profession{
+    width: 54%;
+    float: right;
+    color: #BCBAC5;
+    font-family: inter; 
+   
+}
+
+.right{
+    background-image: url('/source/images/pattern-bg.svg');
+    background-size: 98%;
+    background-repeat: no-repeat;
+    
+       
+    
+}
+
+.avatar{
+    width: 76%;
+    margin-top: 10%;
+    margin-left: 4%;
+
+
+}
