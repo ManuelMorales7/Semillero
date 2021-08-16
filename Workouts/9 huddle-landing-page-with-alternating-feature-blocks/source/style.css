@@ -51,31 +51,33 @@ nav{
 .mainContainer{
     display: flex;
     flex-direction: colum;
-    /* border: solid rgb(119, 119, 118); */
+    border: solid rgb(119, 119, 118);
     height: 100%;
 }
 
 .left{
-    /* border: solid blue; */
+    border: solid blue;
     width: 45%;
     display: flex;
     flex-direction: column;
-    justify-content: center;       
+    justify-content: center;  
+    align-items: center; 
+    box-sizing: border-box;    
 }
 
 .right{
-    /* border: solid orange; */
+    border: solid orange;
     width: 55%;
     background-image: url('/images/illustration-mockups.svg');
-    background-size: 80%;
+    background-size: 75%;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .text{
-    width: 75%;
-    /* border: solid orange; */
-    font-size: 20px ;
+    width: 85%;
+    border: solid orange;
+    font-size: 1.5vw ;
     color: #01232B;
 }
 
@@ -86,8 +88,8 @@ nav{
 
 .btnHeader{
     width: 280px;
-    height: 45px;
+    height: 55px;
     background-color: #FE52C0;
-    border-radius: 20px;
+    border-radius: 40px;
     border-style: none;
 }

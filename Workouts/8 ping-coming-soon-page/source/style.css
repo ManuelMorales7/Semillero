@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap');
+html{
+    display: flex;
+    justify-content: center;
+
+}
+
+*{box-sizing: border-box;}
+
+body{
+    width: 70%;
+    height: 97%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    height: 20%; 
+}
+
+.logo{
+    height: 40%;   
+    background-image: url('/images/logo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.title{
+    height: 30%;  
+    color: #989898;
+    text-align: center;
+    font-size: 170%;
+}
+
+.text{
+    height: 20%;  
+    font-size: 19px;
+    color: #1D2124;
+    text-align: center;
+}
+
+.content{
+    height: 70%; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs{
+    width: 45%;
+    height:20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.dashborad{
+    width: 100%;
+    height: 80%;
+    background-image: url('/images/illustration-dashboard.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+
+.email{
+    width: 65%;
+    height: 50%; 
+    border-radius: 30px;
+    border: solid 2px #E9ECF3;
+    padding-left: 5%;
+    font-size: 18px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+:invalid{
+    border: solid red;
+}
+
+::placeholder{
+    color: #CDD1DA;
+}
+
+.btnSend{
+    height: 50%;
+    width: 30%;
+    background-color: #4D7BF3;
+    box-shadow: #E7F9FF 0px 7px 10px 0px;
+    border-radius: 30px;
+    color: #fff;
+    border-style: none;
+    font-size: 18px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.btnSend:hover{
+    opacity: 75% ;
+}
+
+.social{
+    color:#5281FB;
+    border-radius: 50%;
+    padding-left: 25%;
+    padding-top: 25%;
+    border: solid 2px #E9ECF3;
+    width: 40px;
+    height: 40px;
+}
+
+.fa-facebook-f{
+    padding-left: 30%;
+}
+
+.fa-instagram{
+    padding-left: 29%;
+}
+
+.social:hover{
+    color: #fff;
+    background-color: #5281FB;
+}
+
+.socialMedia{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    width: 5%;
+}
+
+@media screen and (max-width: 790px){
+    body{
+        padding-top: 7%;
+        width: 750px;
+        transition: ease all .8s;
+    }
+
+    .inputs{
+        flex-direction: column;
+        height: 30%;
+        width: 69%;
+    }
+
+    .email{
+        margin-bottom: 3%;
+    }
+
+    .btnSend{
+        width: 65%;
+        height: 50%;
+    }
+
+    .content{
+        height: 80%;
+        padding-top: 4%;
+    }
+
+    .socialMedia{
+        margin-right: 2%;
+    }
+
+
+}
+
+
+
+
+
+
