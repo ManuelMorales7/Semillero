@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{box-sizing: border-box;}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.darkMode {
+    background-color: #1D2029;
+}
+
+.staticText{
+    color: #686A78;
+}
+
+.lightText{
+    color: #fff;
+}
+
+.headerBackground{
+    background-color: #20222F;
+}
+
+.headerBackgroundLight{
+    background-color: #F8F9FE;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    transition: ease all .8s;
+}
+
+
+header{
+    height: 25%;
+    width: 100%;    
+    display: flex;  
+    justify-content: space-between; 
+}
+
+
+article{
+    margin-left: 10%;
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;    
+}
+
+article h1{
+    font-size: 150%;   
+}
+
+article p{
+    font-size: 14px;
+    width: 70%;
+    height: 50%;  
+    margin-top: -2%;  
+}
+
+aside{
+    width: 9%;
+    margin-right: 10%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+aside:before{
+    margin-left: 6%;
+    content: "Dark Mode";
+    margin-right: 6%; 
+    font-size: .8vw;
+    color: #686A78;
+    font-family: 'Inter', sans-serif;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 37%;
+    height: 30%;
+}
+
+.switch input { 
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #AEB2CD;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before{
+    position: absolute;
+    content: "";
+    height: 76%;
+    width: 42%;
+    bottom: 13%;
+    left: 50%;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+} 
+  
+input:checked + .slider {
+    background-image: linear-gradient(to right, #39A2CF, #54C095);
+}
+  
+input:checked + .slider:before{
+    transform: translateX(-96%);
+    background-color: #252A45;
+}
+
+section{    
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.top{
+    width: 100%;
+    height: 40%;  
+    display: flex;
+    justify-content: space-around;    
+    padding-left: 8.5%;
+    padding-right: 8.5%;
+}
+
+.bottom{
+    width: 100%;
+    height: 70%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 7%;
+}
+
+.mainCard{
+    display: flex;
+    flex-direction: column;   
+    width: 22%;
+    height: 115%;
+    background-color: #F0F3FA;
+    border-radius: 10px;
+    position: relative;
+    bottom: 80%
+}
+
+.ups{
+    position: relative;
+    top: 25%;
+    left: 10%;
+}
+
+.faceCard{
+    border-top: solid 4px #188FF2;
+    background-position-y: 16%;
+}
+
+.twCard{   
+    background-position-y: 17%;
+    border-top: solid 4px #188FF2
+}
+
+.instaCard{    
+    border-top: solid 4px #E36789; 
+    background-position-y: 16.5%;
+    background-position-x: 25%;    
+}
+
+.ytCard{    
+    border-top: solid 4px #C30028;
+    background-position-y: 16.5%;
+    background-position-x: 25%;
+}
+
+.topSec{
+    width: 81%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bottomSec{
+    width: 81%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.overVCard{
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;   
+    width: 22.5%;
+    height: 90%;
+    background-color: #F0F3FA;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1000px){
+
+    body{
+        display: flex;
+        justify-content: center;
+    }
+
+    main{
+        width: 375px;
+        height: 2387px;
+        transition: ease all .8s;
+    }
+    
+    header{
+        height: 8%;
+        width: 100%;    
+        display: flex;  
+        justify-content:flex-start;        
+        flex-direction: column;       
+    }
+
+    article{
+        margin-left: 10%;
+        width: 80%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;   
+        margin-bottom: 4%;
+    }
+
+    article h1{
+        margin: 2% 0% 2% 0%;
+    }
+
+    aside{
+        border-top: solid 1px #686A78;
+        width: 80%;
+        height: 20%;
+        margin-left: 10%;
+        margin-top: 6%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 14%;
+        height: 60%;
+    }
+
+    aside:before{
+        margin-left: 0%;
+        font-size: 10px;
+    }
+
+    .top{
+        flex-direction: column;
+        height: 40%;
+    }
+
+    .mainCard{
+        width: 100%;
+        height: 20%;
+        bottom: 5%
+    }
+
+    .topSec{
+        flex-direction: column;
+        width: 84%;
+    }
+
+    .ups{
+        top: 31%;
+        left: 10%;
+    }
+
+    .bottomSec{
+        flex-direction: column;
+        width: 84%;
+    }
+
+    .overVCard {
+        width: 100%;
+        margin-top: 10%;       
+    }
+
+    .bottom{
+        height: 90%;
+    }
+
+
+    
+
+    
+
+}
+
