@@ -26,8 +26,11 @@ function darkMode(){
     let background = document.getElementById('section');
     background.classList.toggle("darkMode");    
 
-    //let text = document.getElementsByClassName('dinamicText');
-    //text.classList.toggle("lightText");
+    let text = document.getElementsByClassName('dinamicText');
+    let longitud = text.length;
+    for(let i = 0; i<longitud; i++){
+        text[i].classList.toggle('lightText');
+    }  
     
     if(document.getElementById('check').checked){        
         let comprobacion = document.getElementById('headerBck');
@@ -61,8 +64,7 @@ let card_1 = createDiv('faceCard mainCard');
 let card_2 = createDiv('twCard mainCard');
 let card_3 = createDiv('instaCard mainCard');
 let card_4 = createDiv('ytCard mainCard');
-let h2Sec = text('h2', 'Overview - Today', 'class', 'dinamicText');
-h2Sec.setAttribute('class', 'ups')
+let h2Sec = text('h2', 'Overview - Today', 'class', 'dinamicText ups');
 let section_1 = singleElement('section');
 section_1.setAttribute('class', 'topSec');
 let section_2 = singleElement('section');

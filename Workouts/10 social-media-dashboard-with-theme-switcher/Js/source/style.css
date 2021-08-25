@@ -53,7 +53,7 @@ article{
 }
 
 article h1{
-    font-size: 150%;   
+    font-size: 180%;   
 }
 
 article p{
@@ -203,7 +203,6 @@ section{
 }
 
 .overVCard{
-    margin-top: 1%;
     display: flex;
     flex-direction: column;   
     width: 22.5%;
@@ -221,7 +220,7 @@ section{
 
     main{
         width: 375px;
-        height: 2387px;
+        height: 2187px;
         transition: ease all .8s;
     }
     
@@ -244,12 +243,13 @@ section{
 
     article h1{
         margin: 2% 0% 2% 0%;
+        font-size: 150%;
     }
 
     aside{
         border-top: solid 1px #686A78;
         width: 80%;
-        height: 20%;
+        height: 25%;
         margin-left: 10%;
         margin-top: 6%;
         display: flex;
@@ -270,7 +270,7 @@ section{
 
     .top{
         flex-direction: column;
-        height: 40%;
+        height: 70%;
     }
 
     .mainCard{
@@ -285,7 +285,7 @@ section{
     }
 
     .ups{
-        top: 31%;
+        top: 45%;
         left: 10%;
     }
 
@@ -300,13 +300,13 @@ section{
     }
 
     .bottom{
-        height: 90%;
+        height: 80%;
+        bottom: 1%;
+    } 
+
+    #section{
+        height: 100%;
     }
-
-
-    
-
-    
 
 }
 
