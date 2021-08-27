@@ -78,8 +78,10 @@ let errorIconPassword = anyElement('i', 'class', 'fas fa-exclamation-circle');
 let smallPassword = text('small', 'Error message');
 
 let input_submit = input('type', 'submit', 'class', 'btnSend input', 'value', 'CLAIM YOUR FREE TRIAL');
-let p_terms = textHtml('p', 'By clickcing the button, you are agree to our <b style="color: #EE878B">Terms and Services</b>');
+let p_terms = textHtml('a', 'By clickcing the button, you are agree to our <b style="color: #EE878B">Terms and Services</b>');
+p_terms.setAttribute('href','https://www.obgyn.com.co/wp-content/themes/medina/medina/images/MODELO-DE-TERMINOS-Y-CONDICIONES.pdf');
 p_terms.setAttribute('class', 'agree');
+p_terms.setAttribute('target', '_black');
 
 document.body.append(main);
 main.append(section);

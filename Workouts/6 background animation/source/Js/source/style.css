@@ -39,7 +39,6 @@ aside{
 }
 
 
-
 .empty{
     font-size: 12px;
     color : rgba(233, 96, 96, 0.883);    
@@ -91,6 +90,10 @@ form{
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     padding-top: 4%;
+}
+
+form a{
+    text-decoration:none;
 }
 
 .entry{
@@ -157,22 +160,37 @@ input:focus{
     background-color: #37CC8A;
     color: #fff;
     font-size: .9vw;
-    border: solid #37CC8A;
+    border-style: none;
+    cursor: pointer;
+}
+
+.btnSend:hover{
+    animation: border-color 1s;
+    animation-timing-function: ease-in;
 }
 
 .submit{
     width: 45%;
+    height: 11%;
 }
 
 .submit:hover{
-    background-color: gray;
+    transform: scale(1.1);
+    transition: .8s;   
+    cursor: pointer;
+}
+
+@keyframes border-color{
+    0%{border-top: 3px solid #ff9d00;}
+    25%{border-right: 3px solid #ff1100;}
+    50%{border-bottom: 3px solid #ff006a;}
+    75%{border-left: 3px solid #cc00ff;}    
 }
 
 .agree{
     color: #C4C2CD;
     font-size: .6vw; 
     margin-top: -10;
-    cursor: pointer;
 }
 
 .emptyContainer{
