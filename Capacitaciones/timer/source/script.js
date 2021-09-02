@@ -48,43 +48,35 @@ containerButtons.append(firstCountDown, secondCountDown,thirdCountDown, fourthCo
 const buttons = document.querySelectorAll('.buttons');
 let startingMinutes;
 let time;
+let countDownTimer;
 
 for(let i=0; i<buttons.length-1; i++){
   buttons[i].addEventListener('click', ()=>{
     startingMinutes = buttons[i].value;
     countDown.innerHTML = startingMinutes;
-  })
-
-}
-
-function convertTime(startingMinutes){
+    numero = parseInt(startingMinutes)*60;
+    console.log(numero);   
+  });
   
-  if(startingMinutes.length === 3){ 
-    time = startingMinutes[0];
-    time *= 60;    
-  }
-  
-  if(startingMinutes.length === 4){
-    time = startingMinutes[0] + startingMinutes[1];
-    time *= 60;    
-  }
+};
 
-  setInterval(timer, 1000)
-  timer(time);
-  
-}
+function timer(numero){
+  clearInterval(countDownTimer);
+  countDownTimer = setInterval(function(){
 
+    const minutes = Math.floor(numero/60);
+    let seconds = numero % 60;
+    seconds = seconds < 10 ? '0' + seconds : seconds;
 
-function timer(time){
-  const minutes = Math.floor(time/60);
-  let seconds = time % 60;
+    countDown.innerHTML = `${minutes}: ${seconds}`;
+    numero--;
 
-  countDown.innerHTML = `${minutes}: ${seconds}`;
-  time--;
+  }, 1000);
+    
 }
 
 startButton.addEventListener('click', ()=>{
-  convertTime(startingMinutes);
+  timer(numero);  
 })
 
 
