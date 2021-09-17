@@ -1,0 +1,434 @@
+*{box-sizing: border-box;}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{font-family: 'Roboto', sans-serif;}
+
+body{
+    margin: 0;
+}
+
+main{
+    display: flex;
+    height: 100%;
+}
+
+aside{
+    background-color: #152339;
+    width: 30%;
+    height: 100%
+}
+
+section{
+    background-color: #1B283E;
+    width: 70%;
+    height: 100%
+}
+
+.headerImage{
+    height: 22%;
+}
+
+.headerImage img{
+    width: 100%;
+    height: 100%
+}
+
+.userInfo{
+    height: 17%;
+}
+
+.biography{
+    margin-bottom: 4%;
+}
+
+.profile{
+    display: flex;
+    height: 6%;
+}
+
+.profile img{
+    border-radius: 50%;
+    margin: 2% 2% 0% 2%;
+}
+
+.profile h5{
+    color: #fff;
+    font-size: 1.1rem;
+    margin: 0; 
+    margin-top: 15%;
+}
+
+.profile h6{
+    color: #A4B4C1;
+    font-size: .7em;
+    margin: 0;
+}
+
+.mainInfo{
+    display: flex;
+    padding-left: 3%;
+    height: 30%;
+}
+
+.mainInfo img{
+    width: 20px;
+    height: 20px;
+    margin-right: 2%;
+    position: relative;
+    top: 50%;
+}
+
+.mainInfo p{
+    color: #fff;
+    font-size: 1.3em;
+}
+
+.bio{
+    height: 70%;
+    width: 90%;
+    margin-left: 10%;
+    margin-top:3%;
+}
+
+.bioUser{
+    height: 33%;
+    display: flex;
+}
+
+.bioUser img{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 15%;
+    margin-right: 2%;
+}
+
+.bioUser span{
+    position: relative;
+    top: 10%;
+    color: #A4B4C1;
+    font-size: 1.1em;   
+}
+    
+.cards{
+    height: 6%;
+    display: flex;
+    padding-left: 3%;
+}
+
+.cards.active{
+    background-color:#1B283E;   
+ 
+}
+
+.cards img{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 14%;
+    margin-right: 2%;
+}
+
+.cards span{
+    position: relative;
+    top: 15%; 
+    color: #fff;
+    font-size: 1.4em;   
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nowPlaying{
+    height: 10%;
+    width: 90%; 
+    background-color: #121D30;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+.lists{
+    height: 25%;
+    width: 90%;
+    background-color: #1B283E;
+    display: flex;
+    justify-content: space-between
+}
+ 
+.library{
+    height: 45%;
+    width: 90%;
+    background-color: #1B283E; 
+    overflow-y: scroll;
+}
+
+section p{
+    margin: 0;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.titlle{
+    width: 90%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+.control-info-music{
+    display: flex;
+    height: 65%;
+    align-items: center
+}
+
+.albumCover{
+    width: 5%;
+    height: 100%;
+}
+
+.name-nameAlbum{
+    width: 35%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.back-play-next{
+    width: 15%;
+    height: 100%;
+}
+
+.volume{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.controlMusic{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icons{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icons img{
+    width: 30px;
+    height: 25px;
+}
+
+.repeatSelected{
+    display: none;
+}
+
+.randomSelected{
+    display: none;
+}
+
+.repeatSelected.active{
+    display: flex;
+    transform: scale(.9);
+}
+
+.randomSelected.active{
+    display: flex;
+    transform: scale(.9);
+}
+
+.repeatDefault{
+    display: none;
+}
+
+.randomDefault{
+    display: none;
+}
+
+.repeatDefault.active{
+    display: flex;
+}
+
+.randomDefault.active{
+    display: flex;
+}
+
+.albumCover img{
+    margin-left: 12%;
+    width: 80%;
+    height: 100%;   
+    border-radius: 6px; 
+}
+
+.name-nameAlbum .nameSongTop{
+    font-size: 1rem;
+}
+
+.name-nameAlbum .nameAlbum{
+    font-size: .9rem;
+    color: #A4B4C1;
+}
+
+section button{
+    background-color: #121D30;
+    border-style: none;    
+}
+
+section button:active{
+    transform: scale(.9);  
+}
+
+.back-play-next{
+    display: flex;
+    justify-content: space-around
+}
+
+.pause{
+    display: none;
+}
+
+.pause.active{
+    display: flex;
+    align-items: center;
+}
+
+.play{
+    display: none;
+}
+
+.play.active{
+    display: flex;
+    align-items: center;
+}
+
+.volume img{
+    width: 30%;
+    height: 50%;
+}
+
+.barVolume{
+    width: 40%;
+    height: 15%;
+    margin-right: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.barVolume input{
+    width: 100%;   
+    position: relative;
+    top: 14%; 
+    right: 10%;
+}
+
+.bar{
+    height: 25%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bar input{
+    width: 99%;
+}
+
+.duration{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1%;
+    margin-left: .5%;
+}
+
+.currentTime{
+    position: relative;
+    right: 3%;
+}
+
+.songList{
+    border-top: solid 1px black;
+    height: 12%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.albumCoverList{
+    width: 40px;
+    height: 40px;
+}
+
+.albumCoverList img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.songList .nameSong{
+    width: 25%;
+}
+
+.artist{
+    width: 20%;
+}
+
+.albumName{
+    width: 25%;
+}
+
+.durationSong{
+    width: 4%;
+}
+
+.sameList{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60%;
+}
+
+.sameList p{
+    color: rgb(255, 255, 255);
+    font-size: .8em;
+}
+
+.songList .nameSong p{
+    color: #A4B4C1;
+    font-weight: bold;
+}
+
+.square{
+    width: 20%;  
+}
+
+.square img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #152339; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #ffffff;     
+    
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3298C0; 
+  }
