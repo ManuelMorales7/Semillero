@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+
+body{
+    padding: 91px 165px 62px 165px;
+    background-color: #FAFAFA;
+    font-family: poppins;
+    
+}
+
+
+section{
+
+    
+    width: 50%;
+    margin-left: 25%;
+    
+
+}
+
+.tittle{
+    
+    width: 50%;
+    height: 16%;
+    margin-left: 23%;
+    font-size: 1vw;
+    color: #52505B;
+    text-align: center;
+    font-weight: lighter;
+
+}
+
+.description{
+    width: 100%;
+    
+    height: 10%;
+    text-align: center;
+    color: #AEADB2;
+    font-size: 1vw;
+}
+
+main{
+    height: 100%;
+
+}
+
+
+.left{
+
+    width: 29%;
+    height: 98%;    
+    float:left;
+    
+    margin-left: 5%; 
+    
+    
+}
+
+.center{
+    width: 29%;
+    height: 98%;   
+    float: right;
+    
+    margin-right: -3%;
+    
+    
+}
+
+.right{
+    width: 29%;
+    height: 98%;    
+    float: right;
+    margin-left: 6%;
+         
+    
+    
+}
+
+
+.cards{
+    
+    height: 67%;
+    
+}
+
+.cardLeft{
+    
+    width: 90%;
+    height: 57%;     
+    border-top: solid 6px #42D4D3;    
+    background-color: #fff;
+    border-radius: 1%; 
+    margin-top: 30%;
+    padding-left: 6%;   
+    margin-left: 1%;  
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+     -moz-box-shadow: 0 10px 6px -6px #777;
+          box-shadow: 0 10px 6px -6px #777; 
+    
+
+        
+    
+}
+
+.cardLeft img{
+    margin-left: 75%;
+    margin-top: 13%;
+    width: 20%;
+    
+}
+
+.cardTop{
+
+    width: 90%;
+    height: 57%;
+    border-top: solid 6px#EA5453;    
+    background-color: #fff;
+    padding-left: 6%;
+    margin-left: -13%; 
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+     -moz-box-shadow: 0 10px 6px -6px #777;
+          box-shadow: 0 10px 6px -6px #777; 
+    
+    
+
+}
+
+.cardTop img{
+    margin-left: 75%;
+    margin-top: 13%;
+    width: 20%;
+}
+
+.cardBottom{
+
+    margin-top: 6%;
+    width: 90%;
+    height: 57%;
+    border-top: solid 6px #FBAD4A;    
+    background-color: #fff;
+    padding-left: 6%;
+    padding-bottom: 6%;
+    margin-left: -13%; 
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+     -moz-box-shadow: 0 10px 6px -6px #777;
+          box-shadow: 0 10px 6px -6px #777; 
+    
+
+}
+
+.cardBottom img{
+    margin-left: 75%;
+    margin-top: 13%;
+    width: 20%;
+
+}
+
+
+.cardRight{
+
+    margin-top: 1%;
+    width: 90%;
+    height: 57%;
+    border-top: solid 6px #549CEE;  
+    background-color: #fff;
+    margin-top: 30%;
+    padding-left: 6%;
+    margin-left: -20%; 
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+     -moz-box-shadow: 0 10px 6px -6px #777;
+          box-shadow: 0 10px 6px -6px #777; 
+    
+    
+    
+
+}
+
+.cardRight img{
+
+    margin-left: 75%;
+    margin-top: 13%;
+    width: 20%;
+
+}
+
+p{
+    color: #A7A7A9;
+}
+
+
+@media screen and (max-width: 1000px){
+    
+    .cards{
+
+        
+        padding-left: 20%;
+        
+        
+    }
+
+    .left{
+        
+        height: 430px;
+        float: none;
+        width: 300px;
+        
+    }
+
+    .center{
+        
+        height: 900px;
+        width: 300px;
+        position: absolute;
+        top: 725px;
+        left: 350px;
+        
+        
+        
+    }
+
+    .right{
+        
+        height: 430px;
+        float: none;
+        width: 300px;
+        position: absolute;
+        top: 1300px;
+        left: 320px;
+        
+        
+        
+    }
+
+    .cardLeft{
+        width: 300px;
+        height: 300px;
+        
+    }
+
+    .cardRight{
+        width: 300px;
+        height: 300px;
+
+    }
+
+    .cardBottom{
+        width: 300px;
+        height: 300px;
+    }
+
+    .cardTop{
+        width: 300px;
+        height: 300px;
+    }
+
+
+    .tittle{
+        font-size: 15px;
+        width: 300px;
+        margin-left: 4px;
+        
+
+    }
+
+    .description{
+
+        font-size: 12px;
+        width: 330px;
+        
+
+    }
+
+    
+
+
+}
