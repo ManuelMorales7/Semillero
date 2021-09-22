@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body{
+    background-color: #FF7978; 
+    font-family: 'Poppins', sans-serif;
+    animation: movement 15s infinite;
+    background-image: url('/images/bg-intro-desktop.png');  
+    background-repeat: no-repeat;  
+    background-size: 100%;
+}
+
+@keyframes movement{    
+    0% {background-position: center;}
+    25% {background-position: top;}
+    50% {background-position: center;}
+    75% {background-position: bottom;}
+    100% {background-position: center;}
+}
+
+main{
+    height: 100%;
+    display: flex;
+}
+
+.right{
+    width: 56%;
+    padding-left: 7%;
+    padding-top: 6%;
+}
+
+.left{
+    width: 40%;
+    color: #fff;
+    padding-left: 13%;
+    padding-top: 16%;
+}
+
+.title{
+    font-size: 3.1vw;
+    width: 90%;
+    padding-bottom: 4%;
+}
+
+.upperText{
+    width: 90%;
+    font-size: 18px; 
+    font-size: 18px;   
+}
+
+form{
+    width: 80%;
+    height: 63%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding-top: 5%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.promo{
+    width: 80%;
+    height: 10%;
+    background-color: #5D54A3;
+    border-radius: 10px;
+    margin-bottom: 4%;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.promo p{
+    font-size: 1.2vw;  
+}
+
+.entry{
+    padding-left: 6%;
+    width: 80%;
+    height: 12%;
+    border: solid 1px #DEDEDE;
+    border-radius: 5px;
+    margin-bottom: 3%;
+    margin-left: 10%;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;       
+}
+
+input:focus{
+    outline: 2px solid #615C7C;  
+}
+
+.btnSend{
+    background-color: #37CC8A;
+    color: #fff;
+    font-size: 18px;
+    border: solid #37CC8A;
+}
+
+.text{
+    display: flex;
+    font-size: 11px;
+    margin-left: 9%;
+    width: 80%;
+    display: flex;
+    justify-content: center;    
+}
+
+.agree{
+    color: #C4C2CD;    
+}
+
+@media screen and (max-width: 800px)  {
+
+    main{
+        flex-direction: column;
+        align-items: center;
+        width: 375px;
+        height: 1000px;
+    }
+
+    body{
+        width: 600px;  
+        background-repeat: repeat;          
+    }
+
+    .left{
+        height: 30%;
+        padding-top: 3%;
+        width: 54%;
+        align-items: center;
+        padding-left: 7%;          
+    }
+
+    .right{
+        height: 70%;
+    }
+
+    .title{
+        font-size: 30px;
+    }
+
+    .text{
+        font-size: 9.9px;
+        text-align: center;
+    }
+
+    .promo p{
+        font-size: 12px;
+        margin-top: 5%;
+    }
+
+    .title{
+        text-align: center;
+        width: 80%;
+    }
+
+    .upperText{
+        text-align: center;
+        width: 80%;
+        font-size: 15px;
+    }
+
+    .entry{
+        font-size: 14px;
+        height: 14%;
+    }
+}
