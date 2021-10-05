@@ -1,0 +1,231 @@
+*{font-family: 'Century Gothic',Verdana;}
+
+html{
+    height: 99%;
+}
+
+body{
+    height: 99%;
+}
+
+main{
+    height: 100%;
+}
+
+h1{
+    color: #007acc;
+    font-weight: 200;
+}
+
+.container{
+    height: 90%;
+    display: flex;
+}
+
+aside{
+    width: 20%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo{
+    width: 70%;
+    margin-bottom: 1%;
+}
+
+.titulo p{
+    width: 100%;
+    height: 100%;
+}
+
+aside span{
+    width: 70%;
+    height: 20%;
+    cursor: pointer;
+}
+
+span, p{
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #835C78;
+    border: solid 2px #C7C7C7;
+    border-radius: 5px;
+}
+
+.titulo button{
+    border-style: none;
+    background-color: #007acc;
+    color: #fff;
+    position: absolute;
+    right: 15%;
+    top: 11%;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.titulo button:hover{
+    transform: scale(1.1);
+    transition: .6s;
+}
+
+p{
+    width: 70%;
+    height: 6%;
+    margin: 0;
+    margin-bottom: 2%;
+}
+
+table.invisible{
+    display: none;
+}
+
+table{
+    width: 70%;
+}
+
+table th{
+    border: solid 3px #ddd;
+    text-align: center;
+}
+
+
+table td img{
+    width: 30px;
+    cursor: pointer;
+}
+
+.btn.hidden{
+    display: none;
+}
+
+.tdEventos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.emergente{
+    width: 30%;
+    border-radius: 7px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.emergente h2{
+    margin: 0;
+    color: #fff;
+    font-weight: 100;  
+}
+
+.emergente form{
+    width: 80%;
+    margin-bottom: 4%;
+}
+
+form div{
+    display: flex;    
+    margin-top: 4%;   
+}
+
+form div label{
+    width: 30%;
+    margin-right: 15%;
+}
+
+form div input{
+    width: 50%;
+}
+
+.emergente section{
+    padding: 0% 5%;
+    margin-bottom: 1%;
+    background-color: #007acc;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.emergente section button{
+    border-radius: 3px;
+}
+
+.emergente form i{
+   position: absolute;
+   right: 29%;
+}
+
+form button[type="submit"]{
+    background-color: #007acc;
+    color: #fff;
+    border-radius: 5px;
+    border-style: none;
+    padding: 2.3%;
+    cursor: pointer;
+    position: relative;
+    left: 62%;
+    margin-top: 6%;
+}
+
+form button[type="submit"]:hover{
+    background-color: #2e94d8;
+}
+
+.emergente.hidden{
+    display: none;
+}
+
+.fa-exclamation-triangle.invisible{
+    display: none;
+}
+
+form button.invisible{
+    display: none;
+}
+
+@media screen and (max-width: 1000px){
+    .container{
+        flex-direction: column;
+    }
+
+    aside{
+        flex-direction: row;
+        width: 80%;
+        justify-content: space-evenly;
+    }
+
+    aside span{
+        width: 20%;
+    }
+
+    .titulo button{
+        top: 36%;
+        left: 60%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    main{
+        width: 800px;        
+    }
+
+    .titulo button{
+        top: 335px;
+        left: 479px;
+    }
+}
+
+

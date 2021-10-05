@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/525730c27d.js" crossorigin="anonymous"></script>
+    <title>Gestion de Riesgos</title>
+</head>
+<body>
+    <main>
+        <h1>CONFIGURACIÓN DE RIESGOS</h1>
+
+        <div class="container">
+            <aside>
+                <span class="impactos" data-table="impacto" data-button="btnImpacto" data-titulo="Impactos">Impactos</span>
+                <span class="probabilidades" data-table="probabilidad" data-button="btnProbabilidad" data-titulo="Probabilidades">Probabilidades</span>
+                <span class="tiposDeRiesgos" data-table="tipo" data-button="btnTipo" data-titulo="Tipos de Riesgos">Tipos de Riesgos</span>
+                <span class="evaluacionDeRiesgos" data-table="evaluacion" data-button="btnEvaluacion" data-titulo="Evaluación de Riesgos">Evaluación de Riesgos</span>
+            </aside>
+
+            <section>
+                <div class="titulo">
+                    <p>Impactos</p>
+                        <button class="btnImpacto btn" data-name="nuevoImpacto" data-objeto="impactos">Nuevo</button> 
+                        <button class="btnProbabilidad btn hidden" data-name="nuevaProbabilidad" data-objeto="probabilidad">Nueva</button>
+                        <button class="btnTipo btn hidden" data-name="nuevoRiesgo" data-objeto="tiposDeRiesgos">Nuevo Tipo</button>
+                        <button class="btnEvaluacion btn hidden" data-name="nuevaEvaluacion" data-objeto="evaulacionDeRiesgos">Nueva</button>
+                </div>
+                
+                <table class="impacto invisible">
+                    <tr>
+                        <th>Código</th>
+                        <th>Descripción</th>
+                        <th>Valor</th>
+                        <th>Acción</th>
+                    </tr>
+                </table>
+
+                <table class="probabilidad invisible">
+                    <tr>
+                        <th>Código</th>
+                        <th>Descripción</th>
+                        <th>Valor</th>
+                        <th>Acción</th>
+                    </tr>
+                </table>
+
+                <table class="tipo invisible">
+                    <tr>
+                        <th>Código</th>
+                        <th>Descripción</th>
+                        <th>Interno</th>
+                        <th>Acción</th>
+                    </tr>
+                </table>
+
+                <table class="evaluacion invisible">
+                    <tr>
+                        <th>Código</th>
+                        <th>Descripción</th>
+                        <th>Valor mínimo</th>
+                        <th>Valor máximo</th>
+                        <th>Acción</th>
+                    </tr>
+                </table>
+
+               
+                    <div class="emergente nuevoImpacto hidden">
+                        <section>
+                            <h2>Impacto</h2>
+                            <button><i class="fas fa-times"></i></button>
+                        </section>
+                        <form>
+                            <div class="codigo">
+                                <label>Código</label>
+                                <input type="text" data-key="codigo">
+                                <i class="fas fa-exclamation-triangle invisible"></i>
+                            </div>
+                            <div class="descripcion">
+                                <label>Descripción</label>
+                                <input type="text" data-key="descripcion">
+                                <i class="fas fa-exclamation-triangle invisible"></i>
+                            </div>
+                            <div class="valor">
+                                <label>Valor</label>
+                                <input type="text" data-key="valor">
+                                <i class="fas fa-exclamation-triangle invisible"></i>
+                            </div>
+    
+                            <button type="submit">Guardar</button>
+                        </form>    
+                    </div>
+
+                    <div class="emergente nuevaProbabilidad hidden">
+                        <section>
+                            <h2>Probabilidades</h2>
+                            <button><i class="fas fa-times"></i></button>
+                        </section>
+                        <form>
+                            <div class="codigo">
+                                <label>Código</label>
+                                <input type="text" data-key="codigo">
+                                <i class="fas fa-exclamation-triangle invisible"></i>
+                            </div>
+                            <div class="descripcion">
+                                <label>Descripción</label>
+                                <input type="text" data-key="descripcion">
+                                <i class="fas fa-exclamation-triangle invisible"></i>
+                            </div>
+                            <div class="valor">
+                                <label>Valor</label>
+                                <input type="text" data-key="valor">
+                                <i class="fas fa-exclamation-triangle invisible"></i>
+                            </div>
+    
+                            <button type="submit">Guardar</button>
+                        </form>    
+                    </div>
+
+                    <div class="emergente nuevoRiesgo hidden">
+                        <section>
+                            <h2>Tipos de Riesgo</h2>
+                            <button><i class="fas fa-times"></i></button>
+                        </section>
+                        <form>
+                            <div class="codigo">
+                                <label>Código</label>
+                                <input type="text" data-key="codigo">
+                                <i class="fas fa-exclamation-triangle invisible"></i>
+                            </div>
+                            <div class="descripcion">
+                                <label>Descripción</label>
+                                <input type="text" data-key="descripcion">
+                                <i class="fas fa-exclamation-triangle invisible"></i>
+                            </div>
+                            <div class="interno">
+                                <label>Interno</label>
+                                <input type="text" data-key="interno">
+                                <i class="fas fa-exclamation-triangle invisible"></i>
+                            </div>
+    
+                            <button type="submit">Guardar</button>
+                        </form>    
+                    </div>
+
+                    <div class="emergente nuevaEvaluacion hidden">
+                        <section>
+                            <h2>Evaluación de Riesgos</h2>
+                            <button><i class="fas fa-times"></i></button>
+                        </section>
+                        <form>
+                            <div class="codigo">
+                                <label>Código</label>
+                                <input type="text" data-key="codigo">
+                                <i class="fas fa-exclamation-triangle invisible"></i>
+                            </div>
+                            <div class="descripcion">
+                                <label>Descripción</label>
+                                <input type="text" data-key="descripcion">
+                                <i class="fas fa-exclamation-triangle invisible"></i>
+                            </div>
+                            <div class="valorMinimo">
+                                <label>Valor mínimo</label>
+                                <input type="text" data-key="valorMinimo">
+                                <i class="fas fa-exclamation-triangle invisible"></i>
+                            </div>
+                            <div class="valorMaximo">
+                                <label>Valor máximo</label>
+                                <input type="text" data-key="valorMaximo">
+                                <i class="fas fa-exclamation-triangle invisible"></i>
+                            </div>
+    
+                            <button type="submit">Guardar</button>
+                        </form>    
+                    </div>
+            </section>
+        </div>
+    </main>
+    <script type="module" src="/src/script.js" ></script>
+</body>
+</html>
