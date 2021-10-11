@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display&display=swap');
+*{font-family: 'Noto Sans Display', sans-serif;}
+
+html, body{
+    height: 99%;
+}
+
+main{
+    height: 100%;
+    display: flex;
+}
+
+aside{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1%;
+}
+
+section, .photo{
+    width: 70%;
+    background-color: #F6F6F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container, .containerImg{
+    width: 93%;
+    height: 95%;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.containerImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerImg img{
+    width: 66%;
+}
+
+.logo{
+    height: 15%;
+    padding: 0% 5%;
+    display: flex;
+}
+
+.logo img{
+    width: 100px;
+    margin-right: 6%;
+}
+coo
+.logo h1{
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.search{
+    height: 10%;
+    padding: 0% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.search label{
+    color: #474747;
+    margin-bottom: 2%;
+    font-size: 1.5rem;
+}
+
+.search input{
+    height: 40%;
+    border-radius: 5px;
+    border-style: none;
+    border: solid 1px #c3c3c3
+}
+
+.lists{
+    height: 71%;
+    padding: 0% 6%;
+    overflow-y: scroll;
+}
+
+.rowList{
+    display: flex;
+    justify-content: space-between;
+}
+
+.lists.hidden{
+    display: none;
+}
+
+.listsSearch div{
+    display: none;
+}
+
+.listsSearch div.visible{
+    display: flex;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.bottons{
+    height: 15%;
+    display: flex;
+    align-items: center;   
+}
+
+.bottons button{
+   border-style: none;
+   background-color: #fff;
+   margin-left: 2%;
+}
+
+.bottons button:hover{
+    transform: scale(1.4);
+    transition: .4s;
+}
+.bottons button:focus{
+    transform: scale(1.4);
+}
+
+label{
+    margin-left: 1%;
+}
+
+.tableDefault{
+    height: 85%;
+    overflow-y: auto;
+}
+
+table{
+    height: 100%;
+    width: 100%;   
+}
+
+table.hidden{
+    display: none;
+}
+
+table tr{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+}
+
+table td{
+    width: 32%;
+}
+
+input[type="checkbox"]{
+    width: 100%;
+}
+
+table td.check{
+    width: 6%;
+}
+
+table th{
+    text-align: start;
+    margin-left: .5%;
+}
+
+table th{
+    width: 40%;
+}
+
+table th.check{
+    width: 6%;
+}
+
+table{
+   font-size: 20px;
+}
+
+table.defaultAccesoTotal.hidden{
+    display: none;
+}
+
+.rowList{
+    cursor: pointer;
+}
+
+.rowList span{
+    margin-right: 4%;
+}
+
+.rowList.selected{
+    background-color: #DEEAFF;
+    border-radius: 0% 30px 30px 0%;
+}
+
+.rowList {
+    align-items: center;
+}
+
+section{
+    display: none;
+}
+
+section.visible{
+    display: flex;
+}
+
+.photo.invisible{
+    display: none;
+}
+
+.checkAllCoordinadora.hidden{
+    display: none;
+}
+
+.unCheckAllCoordinadora.hidden{
+    display: none;
+}
+
+.checkAll.hidden{
+    display: none;
+}
+
+.unCheckAll.hidden{
+    display: none;
+}
