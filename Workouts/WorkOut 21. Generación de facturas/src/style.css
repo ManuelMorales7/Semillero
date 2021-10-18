@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{font-family: 'Roboto', sans-serif;}
+*{box-sizing: border-box;}
+
+body, header, .ordenedesDeFacturacion, .tarjeta, .fechaContenedor, .fecha,
+ .iconContenedorCalendario, .contenedorIconoFiltro, .tarjetaFiltro, .entryInput, .inputsFechas, .contenedorPadre
+ , .iconAdd, .newAdd, .tdImage{
+    display: flex;
+}
+
+body{
+    flex-direction: column;
+    align-items: center;
+    background-color: #F5F5FA;
+}
+
+header{
+    justify-content: space-between;
+    width: 97%;
+    align-items: center;
+}
+
+header img{
+    width: 70px;
+}
+
+main{
+    width: 97%;
+    height: 90%;
+}
+
+.buscarOrdendesDeFacturacion{
+    height: 55%;
+    background-color: #fff;
+}
+
+h3{
+    background-color: #113D72;
+    color: #fff;
+    font-weight: 200;
+    margin: 0;
+    height: 10%;
+    padding: .5%;
+    border-radius: 5px 5px 0 0;
+}
+
+.tarjeta{
+    background-color: #F7F7F7;
+    border-radius: 5px;    
+    margin: 1% 0 0 1%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.inputsFechas{
+    height: 30%;
+    width: 50%;
+}
+
+.fechaContenedor{
+    width: 50%;
+    height: 80%;
+    position: relative;
+}
+
+.fechaContenedor .iconWarning{
+    width: 25px;
+    position: absolute;
+    right: 80;
+    top: 0;
+}
+
+.fecha{
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
+.newAdd{
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
+.newAdd p{
+    margin: 0;
+}
+
+.filtros .tarjetaFiltro{
+    width: 31%;
+    height: 40%;
+    margin: 1%;
+    align-items: center;
+}
+
+.iconContenedorCalendario{
+    width: 15%;
+    justify-content: center;
+}
+
+.iconAdd{
+    width: 15%;
+    justify-content: center;
+}
+
+.iconContenedorCalendario img{
+    width: 70%;
+}
+
+.iconAdd img{
+    width: 70%;
+}
+
+.filtros{
+    height: 45%;
+    width: 75%;
+}
+
+.ordenedesDeFacturacion{
+    height: 45%;
+    background-color: #fff;    
+    align-items: center;   
+    flex-direction: column;
+}
+
+.ordenedesDeFacturacion h3{
+    width: 100%;
+}
+
+.ordenedesDeFacturacion img{
+    width: 80px;
+    margin-top: 3%;
+}
+
+.ordenedesDeFacturacion p{
+    color: #BBBBBB;
+    font-size: 1.6rem;
+}
+
+.contenedorIconoFiltro{
+    width: 15%;
+    height: 100%;
+    align-items: center;
+}
+
+.contenedorIconoFiltro img{
+    width: 80%;
+    margin: auto;
+}
+
+.ordenFacturacion .contenedorIconoFiltro img{
+    width: 50%;
+}
+
+.entryInput{
+    width: 60%;
+    height: 100%;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-between;
+}
+
+.entryInput img{
+    position: absolute;
+    right: 0;
+}
+
+.consultarBtn{
+    position: relative;
+    left: 80%;
+    bottom: 6%;
+    border-style: none;
+    background-color: #2267A0;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    border-radius: 7px;
+}
+
+.filtrarBtn{
+    position: relative;
+    left: 80%;
+    bottom: 30%;
+    border-style: none;
+    background-color: #2267A0;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    border-radius: 7px;
+}
+
+.warningError{
+    visibility: hidden;
+}
+
+.warningError.visible{
+    visibility: visible;
+}
+
+.consultarBtn.hidden{
+    display: none;
+}
+
+input[type="date"].hidden{
+    display: none;
+}
+
+.filtros.hidden{
+    display: none;
+}
+
+.fechaContenedor.hidden{
+    display: none;
+}
+
+.divTable.noVisible{
+    display: none;
+}
+
+.divTable{
+    overflow: auto;
+    width: 100%;
+    height: 70%;
+}
+
+.divTable.hidden{
+    display: none;
+}
+
+table{
+    height: 100%;   
+    width: 120%; 
+    border-spacing: 0;
+}
+
+table select{
+    width: 200px;
+}
+
+table th, table td{
+    border-bottom: solid 1px #959595;
+    height: 100px;
+}
+
+table td{
+    text-align: start;
+    width: 100px;
+}
+
+.file, .tdCheckImg, .valorAnticipo, .acnticipo, .tdCenter {
+    text-align: center;
+}
+
+.tdCheckImg img{
+    width: 20px;
+}
+
+
+.file img{
+    width: 20px;
+}
+
+.acnticipo img{
+    width: 20px;
+}
+
+.descripcionTd{
+    text-align: start;
+}
+
+.modeloTd{
+    width: 150px;
+}
+
+.loaderCcontainer.invisible{
+    display: none;
+}
+
+.filtrarBtn.hidden{
+    display: none;
+}
+.loaderCcontainer{
+    bottom: 60%;
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin: 10px;
+}
+
+.loaderOut{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    border: solid 4px transparent;
+    border-top-color: #0dac77;
+    border-left-color: #0dac77;
+    border-radius: 50%;
+    animation: loaderOut 1.2s linear infinite;
+}
+
+.loaderIn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    height: 70%;
+    border: solid 4px transparent;
+    border-top-color: #0d8cac;
+    border-left-color: #0d8cac;
+    border-radius: 50%;
+    animation: loaderIn 1.2s linear infinite;
+}
+
+@keyframes loaderOut{
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg)
+    }
+}
+
+@keyframes loaderIn{
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(-360deg)
+    }
+}
+
+
+@media screen and (max-width: 1000px){
+
+    .filtros .tarjetaFiltro{
+        width: 38%;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+
+    header h1{
+        font-size: 1.6rem;
+    }
+
+    body{
+        width: 375px;
+        height: 800px;
+        overflow-y: auto;
+    }
+
+    .buscarOrdendesDeFacturacion{
+        height: 80%;
+    }
+
+    .inputsFechas{
+        height: 40%;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .filtros{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .consultarBtn{
+        bottom: 33%;
+        left: 46%;
+        width: 70px;
+        height: 20px;
+        font-size: .6rem;
+        position: absolute;
+    }
+
+    .entryInput{
+        width: 85%;
+    }
+
+    .contenedorIconoFiltro img{
+        width: 90%;
+    }
+    
+    .ordenFacturacion .contenedorIconoFiltro img{
+        width: 60%;
+    }
+
+    .filtros{
+        margin: 0;
+    }
+
+    .filtros .tarjetaFiltro{
+        width: 48%;
+        height: 30%;
+    }
+}

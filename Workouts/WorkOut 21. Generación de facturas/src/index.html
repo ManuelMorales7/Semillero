@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Generación de facturas</h1>
+            <img src="/images/info-icon.svg" alt="">
+        </header>
+        <main>
+            <section class="buscarOrdendesDeFacturacion">
+                <h3>Buscar órdenes de facturación</h3>
+                <div class="inputsFechas tarjeta">
+                    <div class="fechaInial fechaContenedor contenedorPadre">
+                        <div class="iconContenedorCalendario">
+                            <img src="/images/calendar-icon.svg">
+                        </div>
+                        <div class="fecha fechaInical">
+                            <label>Fecha Inicial</label>
+                            <input type="date">
+                            <img class="warningError iconWarning" src="/images/caution-logo.svg">
+                            <small class="warningError messageWarning">La fecha inicial no puede ser mayor que la fecha final</small>
+                        </div>
+                    </div>
+
+                    <div class="fechaFinal fechaContenedor contenedorPadre">
+                        <div class="iconContenedorCalendario">
+                            <img src="/images/calendar-icon.svg">
+                        </div>
+                        <div class="fecha fechaFinal">
+                            <label>Fecha Final</label>
+                            <input type="date">
+                            <img class="warningError iconWarning" src="/images/caution-logo.svg">
+                            <small class="warningError messageWarning">La fecha inicial no puede ser mayor que la fecha final</small>
+                        </div>                        
+                    </div>
+
+                </div>
+                <div class="filtros tarjeta">
+                    <div class="tarjetaFiltro ordenFacturacion" data-type="OrdenDeFacturacion">
+                        <div class="contenedorIconoFiltro">
+                            <img src="/images/sheet-icon.svg">
+                        </div>
+                        <div class="entryInput">
+                            <label>Orden de facturación</label>
+                            <input type="text" data-key="codigoOrdenDeFacturacion">
+                            <img class="warningError iconWarning" src="/images/caution-logo.svg">
+                            <small class="warningError messageWarning">error</small>
+                        </div>
+                        
+                    </div>
+                    <div class="tarjetaFiltro cliente" data-type="cliente">
+                        <div class="contenedorIconoFiltro">
+                            <img src="/images/user-icon.svg">
+                        </div>
+                        <div class="entryInput">
+                            <label>Cliente</label>
+                            <input type="text" data-key="clienteCodigo">
+                            <img class="warningError iconWarning" src="/images/caution-logo.svg">
+                            <small class="warningError messageWarning">error</small>
+                        </div>
+                        
+                    </div>
+                    <div class="tarjetaFiltro modeloDeNegocio" data-type="modeloDeNegocio">
+                        <div class="contenedorIconoFiltro">
+                            <img src="/images/model-icon.svg">
+                        </div>
+                        <div class="entryInput">
+                            <label>Modelo de negocio</label>
+                            <input type="text" data-key="modeloNegocio">
+                            <img class="warningError iconWarning" src="/images/caution-logo.svg">
+                            <small class="warningError messageWarning">error</small>
+                        </div>
+                        
+                    </div>                    
+                    <div class="tarjetaFiltro moneda">
+                        <div class="contenedorIconoFiltro">
+                            <img src="/images/currency-icon.svg">
+                        </div>
+                        <div class="entryInput">
+                            <label>Moneda</label>
+                            <select>
+                            </select>
+                            <img class="warningError iconWarning" src="/images/caution-logo.svg">
+                            <small class="warningError messageWarning">error</small>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <button class="consultarBtn">Consultar</button>
+                <button class="filtrarBtn hidden">Filtrar</button>
+
+            </section>
+
+            <section class="ordenedesDeFacturacion">
+                <h3>Órdenes de facturación</h3>
+
+                <img src="/images/hand-icon.svg" alt="">
+                <p>Ingrese los filtros para consultar las órdenes de facturación</p>
+
+                <div class="divTable hidden">
+                    <table>
+                        <tr>
+                            <th>Ver</th>
+                            <th>Órden de facturación</th>
+                            <th>Fecha registro</th>
+                            <th>Cliente</th>
+                            <th>Modelo de Negocio</th>
+                            <th>Descripción</th>
+                            <th>Forma de Pago</th>
+                            <th>Fehcha de Vencimiento</th>
+                            <th>Valor total a cobrar</th>
+                            <th>Valor anticipo</th>
+                            <th>Asociar Anticipo</th>
+                            <th class="tdCheckImg"><img src="/design/icon-check.svg"></th>
+                        </tr>                       
+                    </table>
+                </div>
+
+
+            </section>
+            
+        </main>
+
+        <div class="loaderCcontainer invisible">
+            <div class="loaderOut"></div>
+            <div class="loaderIn"></div>
+        </div>
+
+        <script type="module" src="script.js"></script>
+    </body>
+</html>
