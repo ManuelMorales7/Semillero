@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Propuesta</title>
+</head>
+<body>
+    <header>
+        <img src="/images/sincoLogo.svg">
+        <p>SINCO<span style="font-size: .6rem;">ERP</span></p>
+    </header>
+    <main>
+        <nav>
+            <div class="modules GTH">
+                <p>SINCO</p>
+                <div><span>GTH</span></div>
+            </div>
+            <div class="modules ADM">
+                <p>SINCO</p>
+                <div><span>ADM</span></div>
+            </div>
+            <div class="modules AYF">
+                <p>SINCO</p>
+                <div><span>A&F</span></div>
+            </div>
+            <div class="modules MRP">
+                <p>SINCO</p>
+                <div><span>MRP</span></div>
+            </div>
+            <div class="modules ADPRO">
+                <p>SINCO</p>
+                <div><span>ADPRO</span></div>
+            </div>
+            <div class="modules MYE">
+                <p>SINCO</p>
+                <div><span>M&E</span></div>
+            </div>
+            <div class="modules CBR">
+                <p>SINCO</p>
+                <div><span>CBR</span></div>
+            </div>
+            <div class="modules ABR">
+                <p>SINCO</p>
+                <div><span>ABR</span></div>
+            </div>
+            <div class="modules FYC">
+                <p>SINCO</p>
+                <div><span>F&C</span></div>
+            </div>
+            <div class="modules SGC">
+                <p>SINCO</p>
+                <div><span>SGC</span></div>
+            </div>
+            <div class="modules SGP">
+                <p>SINCO</p>
+                <div><span>SGP</span></div>
+            </div>
+            <div class="modules SGD">
+                <p>SINCO</p>
+                <div><span>SGD</span></div>
+            </div>
+            <div class="modules BI">
+                <p>SINCO</p>
+                <div><span>BI"</span></div>
+            </div>
+            <div class="modules SST">
+                <p>SINCO</p>
+                <div><span>SST</span></div>
+            </div>            
+        </nav>
+        <section>
+            <div class="secondNav">
+                <div class="options">
+                    <div class="time">
+                        <img src="/images/relojIcon.svg" alt="">
+                    </div>
+                    <div class="star">
+                        <img src="/images/star-solid.svg" alt="">
+                    </div>
+                    <div class="sinco">
+                        <img src="/images/sincoLogo.svg" alt="">
+                    </div>
+                    <div class="options">
+                        <img src="/images/configIcon.svg" alt="">
+                    </div>
+                </div>
+                <input class="searchInput" type="text" placeholder="Buscar opción">
+            </div>
+            <div class="mainContainer">
+                <div class="leftPanel">
+                    <div class="inputSearch">
+                        <img src="/images/database icon.svg">
+                        <input type="text">
+                        <img src="/images/icon share.svg" alt="">
+                        <img src="/images/iconExport.svg" alt="">
+                    </div>
+                    <div class="activitysFound"></div>                
+                </div>
+                <div class="rightContainer">
+                    <div class="mainFilter">
+                        <div class="entryText">
+                            <h1>Actividades Pendientes</h1>
+                            <input type="text">
+                            <img src="/images/healpIcon.svg" alt="">
+                            <button>Consultar</button>
+                        </div>
+                        <div class="filters">
+                            <img src="/images/filterIcon.svg" class="filterIcon">
+                        </div>
+                    </div>
+                    <div class="pasos">
+                    </div>
+                    <div class="maindCard">
+                        <div class="content">
+                            <h1>Ejecutar Actividad</h1>
+                            
+                            <div class="tabs">
+                                <span class="focus"><a href="#ejecutar">Ejecutar Actividad</a></span>
+                                <span><a href="#descriptores">Descriptores</a></span>
+                                <span><a href="#seguimientos">Seguimientos</a></span>
+                                <span><a href="#correspondencia">Correspondencia</a></span>    
+                            </div>
+                            <div class="display">
+                                <div id="ejecutar" class="ejecutarActividad">
+                                    <div class="panelBtns">
+                                        <button>Reasignar</button>
+                                        <button>Respuesta</button>
+                                        <button class="addDocs">Agregar Documentos</button>
+                                    </div>
+                                    <div class="redistribuir">
+                                        <label>Distribuir a: </label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="textCont">
+                                        <p>Observaciones: </p>
+                                        <textarea placeholder="Máximo 2500 palabras" id="" cols="30" rows="10"></textarea>
+                                    </div>
+                                    <div class="anexos">
+                                        <div class="listAnexos">
+                                        </div>                                       
+                                        <button><a href="#descriptores">Llenar Descriptores</a></button>
+                                    </div>
+                                </div>
+                                <div id="descriptores" class="descriptores">
+                                    <div class="divEntry">
+
+                                    </div>
+                                    <button>Ejecutar Actividad</button>
+                                </div>
+                                <div id="seguimientos" class="seguimientos">
+                                    <div class="table">
+                                        <table>
+                                            <tr>
+                                                <th>Paso</th>
+                                                <th>Actividad del flujo</th>
+                                                <th>Estado</th>
+                                                <th>Usuario</th>
+                                                <th>Observaciones</th>
+                                            </tr>
+                                            <tr>
+                                                <td>0</td>
+                                                <td>Registro de Correspondencia</td>
+                                                <td>Registrado</td>
+                                                <td>Admin Sincosoft 19/04/2017 11:04:05</td>
+                                                <td>Factura de servicios</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Asociar actas y entradas (ADPRO)</td>
+                                                <td>Completado</td>
+                                                <td>Admin Sincosoft 19/04/2017 12:04:05</td>
+                                                <td>ok</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Revisar concepto y valor</td>
+                                                <td>Completado</td>
+                                                <td>Admin Sincosoft 19/04/2017 12:04:05</td>
+                                                <td>ok</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Causar factura</td>
+                                                <td>Pendiente</td>
+                                                <td>Implementación 08/05/2017 16:04:05</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Reasignación de correspondencia</td>
+                                                <td>Completado</td>
+                                                <td>Admin Sincosoft 11/04/2017 10:04:05</td>
+                                                <td>Se reasignó los componentes Office a Admin Sincosfot</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Reasignación de correspondencia</td>
+                                                <td>Pendiente</td>
+                                                <td>Admin Sincosoft 11/04/2017 10:04:05</td>
+                                                <td>Se reasignó los componentes Office a Admin Sincosfot</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Revisar concepto y valor</td>
+                                                <td>Completado</td>
+                                                <td>Admin Sincosoft 19/04/2017 12:04:05</td>
+                                                <td>ok</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Causar factura</td>
+                                                <td>Pendiente</td>
+                                                <td>Implementación 08/05/2017 16:04:05</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Reasignación de correspondencia</td>
+                                                <td>Completado</td>
+                                                <td>Admin Sincosoft 11/04/2017 10:04:05</td>
+                                                <td>Se reasignó los componentes Office a Admin Sincosfot</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Reasignación de correspondencia</td>
+                                                <td>Pendiente</td>
+                                                <td>Admin Sincosoft 11/04/2017 10:04:05</td>
+                                                <td>Se reasignó los componentes Office a Admin Sincosfot</td>
+                                            </tr>
+                                          </table>
+                                    </div>
+                                </div>
+                                <div id="correspondencia" class="correspondencia">
+                                    <p>No tiene correspondecia Asociada</p>
+                                </div>      
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

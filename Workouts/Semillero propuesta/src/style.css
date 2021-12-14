@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@100&display=swap');
+*{font-family: 'Roboto Slab', serif}
+*{box-sizing: border-box}
+
+html{
+    height: 99%;
+}
+
+body{
+    margin: 0;
+    height: 99%;
+}
+
+header{
+    background-color: #18344D; 
+    height: 3%;
+    display:flex;
+    align-items: center;
+    color: #fff;
+}
+
+header img{
+    height: 80%;
+    margin-left: .3%;
+}
+
+main{
+    display: flex;
+    height: 98.9%;
+}
+
+nav{
+    width: 3%;   
+    background-color: #18344D; 
+}
+
+nav .modules{
+    width: 80%;
+    margin: auto;
+    height: 5%;
+    margin-bottom: 10%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;    
+}
+
+.modules p{
+    margin: 0;
+    font-size: 0.5rem;
+    margin: auto;
+}
+
+.modules div{
+    border-top: solid 1px white;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+}
+
+.modules.GTH{
+    background: #734E99;
+}
+
+.modules.ADM{
+    background: #8CAAC1;
+}
+
+.modules.AYF{
+    background: #8CAAC1;
+}
+
+.modules.MRP{
+    background: #BFC345;
+}
+
+.modules.ADPRO{
+    background: #037F91;
+}
+
+.modules.MYE{
+    background: #E8CB68;
+}
+
+.modules.CBR{
+    background: #B25762;
+}
+
+.modules.ABR{
+    background: #CA7149;
+}
+
+.modules.FYC{
+    background: #1E62A0;
+}
+
+.modules.SGC{
+    background: #6A7F3D;
+}
+
+.modules.SGP{
+    background: #77A05D;
+}
+
+.modules.SGD{
+    background: #77A05D;
+}
+
+.modules.SGP{
+    background: #77A05D;
+}
+
+.modules.BI{
+    background: #DDA757;
+}
+
+.modules.SST{
+    background: #70813E;
+}
+
+section{
+    width: 96%;
+}
+
+.secondNav{
+    background-color: #E2E0E1;
+    height: 4%;
+    width: 101%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.options{
+    display: flex;
+    width: 15%;
+    height: 80%;
+}
+
+.options div{
+    border-left: solid 2px #C2C4C6;
+    width: 25%;
+    height: 100%;
+}
+
+.options:last-child{
+    border-right: solid 2px #C2C4C6;
+    width: 25%;
+}
+
+.options img{
+    height: 80%;
+}
+
+.options div{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    height: 95%;
+    display: flex;
+}
+
+.administrar{
+    height: 45%;
+    width: 16%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    font-weight: bold;
+    margin: .4% .5%;
+    color: #657689;
+}
+
+.administrar p{
+    margin: 0;
+    text-align: center;
+    border-bottom: solid 2px ;
+    font-size: 1.2rem;
+}
+
+.administrar button{
+    border-style: none;
+    background-color: #657689;
+    color: #fff;
+    margin: 2% 35%;
+    padding: 2% 6%;
+}
+
+.controlMaquinaria{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    width: 50%;
+    height: 55%;
+    margin-top: .4%;
+    border-radius: 11px;
+    display: flex;
+    justify-content: center;
+    transition: .6s;
+}
+
+.controlMaquinaria::-webkit-scrollbar {
+    width: 8px;               /* width of the entire scrollbar */
+}
+
+.controlMaquinaria::-webkit-scrollbar-thumb {
+    background-color: #CAB55E;    /* color of the scroll thumb */
+}
+
+.activo.visible{
+    color: #657689;
+    display: flex;
+}
+
+.activo.invisible{
+    color: #657689;
+    display: none;
+}
+
+.content{
+    width: 90%;
+}
+
+.controlMaquinaria h1{
+    color: #243B53;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.8rem
+}
+
+.tabs{
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    border-bottom: 2px solid #D4DFE9;
+    height: 41.406px;
+}
+
+.tabs span{
+    color: #8897A7;
+    position: relative;
+    bottom: -2px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    height: 39.406px;
+}
+
+.tabs span.focus{
+    border-bottom: 2px solid #CAB55E;  
+    color: #243B53;
+}
+
+.display{
+    padding-top: 1%;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.infoContainer{
+    width: 40%;
+    color: #8897A7;
+}
+
+.photoContainer{
+    width: 55%;
+    background-image: url("/images/activo.png");
+    background-size: cover;
+    border-radius: 2px;
+    height: 90%;
+}
+
+.infoContainer input{
+    border-style: none;
+    border: solid 2px #E7EDF4;
+    border-radius: 4px;
+    background-color: #E7EDF4;
+    color: #243B53;
+    height: 14%;
+}
+
+.ctrlMantenimiento, .ctrlMedidores, .ctrlAsignacionPresupuestal{ 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+.ctrlMedidores{
+    height: 580px; 
+    padding-bottom: 2%;   
+}
+
+.display select, input{
+    border-style: none;
+    border: solid 2px #E7EDF4;
+    border-radius: 4px;
+    background-color: #F6F9FD;
+    color: #243B53;
+    height: 50px;
+    width: 100%;
+    font-size: 1.1rem;
+    padding-left: 4%;
+}
+
+.display select{
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;    
+    background-image: url('/images/arrowIcon.svg');
+    background-position-x: 95%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+}
+
+.ctrlMantenimiento, .ctrlMedidores, .ctrlAsignacionPresupuestal, .combustibles, .Obras p{
+    color: #243B53;
+    margin: 0;
+    font-size: 1.1rem
+}
+
+.display .input{
+    width: 30%;
+    height: 30%;
+}
+
+.ctrlMantenimiento .checkContainer{
+    display: flex;
+    justify-content: left;
+}
+
+.ctrlMantenimiento .check{
+    width: 50%;
+}
+
+.ctrlMedidores, .combustibles, .medidorUnoInfo{
+    border-top: 2px solid #E7EDF4;
+}
+
+.ctrlAsignacionPresupuestal{
+    border-top: 2px solid #E7EDF4;
+}
+
+.searchInput{
+    height: 100%;
+}
+
+.display .search{
+    background-image: url('/images/search.svg');
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 50%;
+}
+input[type="date"]::-webkit-calendar-picker-indicator{
+    background-image: url('/images/calendarIcon.svg');
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.ctrlMantenimiento{
+    height: 300px;
+}
+
+.ctrlMedidores{
+    height: 400px;
+}
+
+.titleTab{
+    width: 100%;
+    height: 20px;
+}
+
+.titleTab h3{
+    margin: 0;
+}
+
+.ctrlMantenimiento .input p{
+    margin: 0;
+    margin-bottom: 3%;
+}
+
+input[type ="checkbox"]{
+    height: 40px;
+    width: 40px;
+}
+
+.ctrlMedidoresDos.hidden{
+    display: none;
+}
+
+.ctrlMedidoresDos.visible{
+    display: flex;
+}
+
+.tabCombustible.hidden{
+    display: none;
+}
+
+.tabCombustible.visible{
+    display: flex;
+}
+
+.ctrlMedidoresDos{
+    padding-top: 2%;
+    height: 450px;
+}
+
+.combustibles, .Obras{
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    justify-content: space-between;
+}
+
+.Obras{
+    height: 200px;
+}
+
+.combustibles{
+    padding-bottom: 2%;
+    height: 300px;
+}
+
+.ctrlAsignacionPresupuestal, .combustibles, .Obras,  h3{
+    color: #243B53;
+}
+
+
+.ctrlAsignacionPresupuestal{
+    height: 300px;
+    padding-top: 1%;
+}
+
+.informacionMantenimiento, .medidorUnoInfo{
+    display: flex;
+    height: 150px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.informacionMantenimiento .input{
+    height: 100%;
+}
+
+.medidorUnoInfo .input{
+    height: 100%;
+}
+
+.tarifaContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 300px;
+}
+
+
+@media screen and (max-width: 1200px){
+    .controlMaquinaria{
+        transform: scale(.9);
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .controlMaquinaria{
+        transform: scale(.8);
+    }
+}
+
+@media screen and (max-width: 800px){
+    .controlMaquinaria{
+        transform: scale(.7);
+    }
+
+    .display p{
+        font-size: 0.9rem;
+    }
+}
